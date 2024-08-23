@@ -265,8 +265,12 @@ var _hmt = _hmt || [];
 			repo: 'gamto.github.io',
 			owner: 'gamto',
 			admin: 'gamto',
-			id: location.pathname,
-			distractionFreeMode: false
+			id: location.pathname,      // 고유한 페이지 ID
+			language: 'ko',             // 한국어 설정
+			distractionFreeMode: false, // 디스트랙션 프리 모드
+			perPage: 15,                // 한 페이지에 표시될 댓글 수
+			pagerDirection: 'last',     // 댓글 정렬 방향
+			enableHotKey: true,
 		})
 
 		gitalk.render('gitalk-container')
